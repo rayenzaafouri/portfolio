@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Comfortaa:wght@300&display=swap');
+
+
+*{
+    /*border: 1px groove blue;*/
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+.landing{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    background-image:  linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)) , url('drawable/landing-bg.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    padding-left: 15vw ;
+    margin-bottom: 10vh;
+    cursor: pointer;
+ 
+}
+
+.landing > * {
+    padding: 0;
+    margin: 0;
+}
+
+.landing-title{
+    font-family: 'Comfortaa', cursive;
+}
+
+.landing h3 {
+    box-sizing: border-box;
+    padding: .5rem;
+    border: 1px solid white;
+    border-radius:.5rem ;
+    margin: .5rem 0px .5rem 0px;
+}
+
+.landing h3 span:after{
+    content:" | ";
+}

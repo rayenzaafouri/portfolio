@@ -40,11 +40,22 @@ export default {
     background: white;
     border-radius: 16px;
     padding: 1.5em;
-    border: 4px solid black;
     width: fit-content;
     position: relative;
     margin: 0 auto;
     transform: scale(75%);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1.75em 5em;
+    border: 3px solid black ;
+    transition: all .5s;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(191, 179, 179, 0.28);
+    height: 30dvh;
 
 
 }

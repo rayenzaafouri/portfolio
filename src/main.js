@@ -7,5 +7,7 @@ import '/models/particle.js'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
+import '@/assets/anim.css'
+
 
 createApp(App).use(router).mount('#app')

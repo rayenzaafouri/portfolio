@@ -129,6 +129,7 @@ export default {
         particlesCanvas.appendChild(element);
         element.style.setProperty("top", particle.x + "px");
         element.style.setProperty("left", particle.y + "px");
+        element.style.setProperty("animation", "fadeIn 5s");
         return;
       };
 
@@ -141,7 +142,6 @@ export default {
       for (let i = 0; i <= gridX; i++) {
         for (let j = 0; j <= gridY; j++) {
           let cords = getRandomCords(i, j, gridX, gridY);
-          console.log(cords);
           let particle = new Particle(
             cords.x,
             cords.y,
@@ -152,20 +152,18 @@ export default {
           drawParticle(particle);
         }
       }
-      console.log(this.particlesArray);
     });
   },
 };
 </script>
   
-  <style scoped>
+  <style>
 
   .bg-partic{
     filter: blur(2.5px);
     overflow: hidden;
-    height: 100dvh;
-
-
+    height: 250dvh;
+    
   }
 </style>
   

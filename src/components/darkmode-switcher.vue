@@ -5,8 +5,8 @@
   
   <style scoped>
   div{
+    color: black;
     font-size: .75em;
-    background:transparent;
     right: .5em;
     top: .5em;
     position: fixed;
@@ -14,8 +14,15 @@
     cursor: pointer;
     background: #2c3e50;
     border-radius:16px;
-    color: white;
+    background: rgba(191, 179, 179, 0.2);
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(191, 179, 179, 0.28);
     padding: .5em;
+    
+
   }
   div > * {
         cursor: pointer;
